@@ -1,16 +1,4 @@
 local icons_by_filename = {
-  ["build.gradle"] = {
-    icon = "",
-    color = "#005f87",
-    cterm_color = "24",
-    name = "GradleBuildScript",
-  },
-  ["settings.gradle"] = {
-    icon = "",
-    color = "#005f87",
-    cterm_color = "24",
-    name = "GradleSettings",
-  },
   [".babelrc"] = {
     icon = "",
     color = "#666620",
@@ -161,6 +149,18 @@ local icons_by_filename = {
     cterm_color = "25",
     name = "PrettierConfig",
   },
+  [".prettierrc.cjs"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.js"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
   [".prettierrc.json"] = {
     icon = "",
     color = "#3264b7",
@@ -168,6 +168,12 @@ local icons_by_filename = {
     name = "PrettierConfig",
   },
   [".prettierrc.json5"] = {
+    icon = "",
+    color = "#3264b7",
+    cterm_color = "25",
+    name = "PrettierConfig",
+  },
+  [".prettierrc.mjs"] = {
     icon = "",
     color = "#3264b7",
     cterm_color = "25",
@@ -269,12 +275,6 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "Vimrc",
   },
-  ["R"] = {
-    icon = "󰟔",
-    color = "#1a4c8c",
-    cterm_color = "25",
-    name = "R",
-  },
   ["avif"] = {
     icon = "",
     color = "#6b4d83",
@@ -299,6 +299,18 @@ local icons_by_filename = {
     cterm_color = "22",
     name = "BazelBuild",
   },
+  ["build.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleBuildScript",
+  },
+  ["build.zig.zon"] = {
+    icon = "",
+    color = "#7b4d0e",
+    cterm_color = "94",
+    name = "ZigObjectNotation",
+  },
   ["checkhealth"] = {
     icon = "󰓙",
     color = "#3a5a7e",
@@ -310,6 +322,18 @@ local icons_by_filename = {
     color = "#526064",
     cterm_color = "59",
     name = "CMakeLists",
+  },
+  ["code_of_conduct"] = {
+    icon = "",
+    color = "#ab104a",
+    cterm_color = "125",
+    name = "CodeOfConduct",
+  },
+  ["code_of_conduct.md"] = {
+    icon = "",
+    color = "#ab104a",
+    cterm_color = "125",
+    name = "CodeOfConduct",
   },
   ["commit_editmsg"] = {
     icon = "",
@@ -433,8 +457,8 @@ local icons_by_filename = {
   },
   ["FreeCAD.conf"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCADConfig",
   },
   ["gemfile$"] = {
@@ -563,6 +587,12 @@ local icons_by_filename = {
     cterm_color = "30",
     name = "Hyprlock",
   },
+  ["hyprpaper.conf"] = {
+    icon = "",
+    color = "#008082",
+    cterm_color = "30",
+    name = "Hyprpaper",
+  },
   ["i18n.config.js"] = {
     icon = "󰗊",
     color = "#515987",
@@ -642,6 +672,12 @@ local icons_by_filename = {
     name = "Kritarc",
   },
   ["license"] = {
+    icon = "",
+    color = "#686020",
+    cterm_color = "58",
+    name = "License",
+  },
+  ["license.md"] = {
     icon = "",
     color = "#686020",
     cterm_color = "58",
@@ -791,12 +827,6 @@ local icons_by_filename = {
     cterm_color = "28",
     name = "Qt",
   },
-  ["r"] = {
-    icon = "󰟔",
-    color = "#1a4c8c",
-    cterm_color = "25",
-    name = "R",
-  },
   ["rakefile"] = {
     icon = "",
     color = "#701516",
@@ -814,6 +844,24 @@ local icons_by_filename = {
     color = "#465470",
     cterm_color = "60",
     name = "RobotsTxt",
+  },
+  ["security"] = {
+    icon = "󰒃",
+    color = "#3f4143",
+    cterm_color = "238",
+    name = "Security",
+  },
+  ["security.md"] = {
+    icon = "󰒃",
+    color = "#3f4143",
+    cterm_color = "238",
+    name = "Security",
+  },
+  ["settings.gradle"] = {
+    icon = "",
+    color = "#005f87",
+    cterm_color = "24",
+    name = "GradleSettings",
   },
   ["svelte.config.js"] = {
     icon = "",
@@ -940,12 +988,6 @@ local icons_by_filename = {
     color = "#ac3a12",
     cterm_color = "124",
     name = "XSettingsdConf",
-  },
-  ["build.zig.zon"] = {
-    icon = "",
-    color = "#7b4d0e",
-    cterm_color = "94",
-    name = "ZigObjectNotation",
   },
 }
 
@@ -1286,6 +1328,12 @@ local icons_by_file_extension = {
     cterm_color = "52",
     name = "ConfigRu",
   },
+  ["cow"] = {
+    icon = "󰆚",
+    color = "#70421b",
+    cterm_color = "94",
+    name = "CowsayFile",
+  },
   ["cp"] = {
     icon = "",
     color = "#36677c",
@@ -1514,6 +1562,12 @@ local icons_by_file_extension = {
     cterm_color = "94",
     name = "Ebook",
   },
+  ["ebuild"] = {
+    icon = "",
+    color = "#4C416E",
+    cterm_color = "60",
+    name = "GentooBuild",
+  },
   ["edn"] = {
     icon = "",
     color = "#36677c",
@@ -1642,56 +1696,56 @@ local icons_by_file_extension = {
   },
   ["fcbak"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcmacro"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcmat"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcparam"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcscript"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcstd"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fcstd1"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fctb"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fctl"] = {
     icon = "",
-    color = "#cb0d0d",
-    cterm_color = "160",
+    color = "#98262c",
+    cterm_color = "88",
     name = "FreeCAD",
   },
   ["fdmdownload"] = {
@@ -1909,6 +1963,12 @@ local icons_by_file_extension = {
     color = "#6b4d83",
     cterm_color = "96",
     name = "Hs",
+  },
+  ["http"] = {
+    icon = "",
+    color = "#006a95",
+    cterm_color = "24",
+    name = "HTTP",
   },
   ["htm"] = {
     icon = "",
@@ -3304,8 +3364,8 @@ local icons_by_file_extension = {
   },
   ["ui"] = {
     icon = "",
-    color = "#0c306e",
-    cterm_color = "17",
+    color = "#015BF0",
+    cterm_color = "27",
     name = "UI",
   },
   ["v"] = {
